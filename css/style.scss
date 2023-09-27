@@ -1,3 +1,91 @@
-html, body {
-    
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;900&display=swap");
+
+html,
+body {
+  color: #191919;
+  font-family: "Inter", sans-serif;
+  font-size: 15px;
+
+}
+
+header {
+  background-color: #f0efe9;
+  display: flex;
+  padding: 16px;
+
+  .container {
+    display: flex;
+
+    .menu {
+      flex: 1;
+
+      .top-menu {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 12px;
+        align-items: center;
+
+        .socialmedia {
+          a {
+            color: #3a3a3a;
+            font-size: 1.2rem;
+            margin-left: 12px;
+
+            &:hover {
+              color: #727272;
+            }
+          }
+        }
+
+        .contact-information {
+          display: flex;
+          align-items: center;
+
+          .content-box {
+            margin-right: 20px;
+            padding-right: 20px;
+            border-right: 1px solid black;
+            font-family: "Inter", sans-serif;
+            font-size: 15px;
+            font-weight: 300;
+
+            i {
+              margin-right: 5px;
+              font-size: 1.1em;
+
+            }
+
+            &.last {
+              border: none;
+            }
+          }
+        }
+      }
+
+      .main-menu {
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 10px;
+
+        nav {
+          a {
+            color: #191919;
+            text-decoration: none;
+            margin-right: 30px;
+
+            &.active::after {
+              font-weight: 500;
+            }
+
+            &:hover {
+              text-decoration: underline;
+            }
+
+          }
+        }
+      }
+    }
+  }
 }
